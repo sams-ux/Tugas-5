@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran MTS Darul Amien</title>
+
+    <link rel="stylesheet" type="text/css" href="p.css">
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.jpeg" alt="Logo MTS Darul Amien" style="display: block; margin: 0 auto; width: 150px;">
+    <h1>Pendaftaran MTS Darul Amien</h1>
+    <form action="proses_pendaftaran.php" method="POST">
+        <h2>I. BIODATA SISWA</h2>
+        <label for="no_un">A. No. UN/US SMP/MTs/Sederajat:</label>
+        <input type="text" id="no_un" name="no_un">
+
+        <label for="nama">B. Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama">
+
+        <label for="jenis_kelamin">C. Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin">
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="nama_orang_tua">D. Nama Orangtua/Wali:</label>
+        <input type="text" id="nama_orang_tua" name="nama_orang_tua">
+
+        <label for="alamat">E. Alamat (sesuai KK/KTP Ortu/Wali murid calon siswa):</label>
+        <textarea id="alamat" name="alamat" rows="4" ></textarea>
+
+        <label for="kota_kabupaten">F. Kota/Kabupaten:</label>
+        <input type="text" id="kota_kabupaten" name="kota_kabupaten">
+
+        <label for="asal_sekolah">G. Asal Sekolah:</label>
+        <input type="text" id="asal_sekolah" name="asal_sekolah">
+
+        <label for="agama">H. Agama:</label>
+        <select id="agama" name="agama">
+            <option value="">Pilih Agama</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+
+        <h2>II. PENILAIAN</h2>
+        A. NILAI UJIAN SEKOLAH/MADRASAH <br>
+        <label for="nilai_matematika"> 1. Matematika:</label>
+        <input type="number" id="nilai_matematika" name="nilai_matematika">
+
+        <label for="nilai_bahasa_indonesia">2. Bahasa Indonesia:</label>
+        <input type="number" id="nilai_bahasa_indonesia" name="nilai_bahasa_indonesia">
+
+        <label for="nilai_bahasa_inggris">3. Bahasa Inggris:</label>
+        <input type="number" id="nilai_bahasa_inggris" name="nilai_bahasa_inggris">
+
+        <label for="nilai_ipa">4. Ilmu Pengetahuan Alam (IPA):</label>
+        <input type="number" id="nilai_ipa" name="nilai_ipa">
+
+        <label for="nilai_bonus">B. NILAI BONUS PRESTASI (NBP):</label>
+        <input type="number" id="nilai_bonus" name="nilai_bonus">
+
+        <label for="nilai_lokal">C. NILAI POTENSI LOKAL (NPL):</label>
+        <input type="number" id="nilai_lokal" name="nilai_lokal">
+
+        <label for="total_nilai">D. JUMLAH TOTAL NILAI AKHIR PPDB:</label>
+        <input type="number" id="total_nilai" name="total_nilai">
+
+        <button type="submit">Daftar</button>
+    </form>
+</div>
+
+</body>
+</html>
